@@ -11,9 +11,16 @@
 #ifdef	__cplusplus
 extern "C" {
 #endif
+    
 
-char *abc(char *str,int num);
-int getTotal(int *array, int len);
+struct STARLIST{
+    int id;
+    float ra;
+    float dec;
+};
+
+float *sum(float *array, float *result, int len);
+void sum1(struct STARLIST *starlist, int length);
 
 
 #ifdef	__cplusplus
